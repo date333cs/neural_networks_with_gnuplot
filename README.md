@@ -3,8 +3,7 @@ C codes for learning how neural nets work
 
 =============
 
-<img src="https://github.com/date333cs/neural_networks_with_gnuplot/blob/master/anim-som2d.gif" height="220px"
-
+<img src="https://github.com/date333cs/neural_networks_with_gnuplot/blob/master/anim-som2d.gif" height="220px" align="left">
 
 Compile each code by gcc *.c -lm and run and see !!! 
 - If gnuplot is installed in your machine, it must work. 
