@@ -13,13 +13,13 @@ So if you want to know how it works, it is not difficult to read the codes.
 
 #### SOM (1 dimension)
 
-- [somanim090501-1d.](somanim090501-1d.c)
-- [Kurata-special002.c](Kurata-special002.c) (input space: 3 dimension)
+- [somanim-1d_001.c](somanim-1d_001.c)
+- [kurata-special002.c](kurata-special002.c) (input space: 3 dimension)
 
 #### SOM (2 dimension)
 
-- [sample090501gp5.c](sample090501gp5.c) [animation]
-- [somanim090501-2d.c](somanim090501-2d.c)
+- [som-2d_001.c](som-2d_001.c) [animation]
+- [somanim-2d_001.c](somanim-2d_001.c)
 
 #### Associative Memory
 
