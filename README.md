@@ -3,8 +3,7 @@ C codes for learning how neural nets work
 
 =============
 
-.. image:: docs/anim-som2d.gif
-    :align: right
+<img src="https://github.com/date333cs/neural_networks_with_gnuplot/blob/master/anim-som2d.gif" height="220px"
 
 
 Compile each code by gcc *.c -lm and run and see !!! 
@@ -12,4 +11,3 @@ Compile each code by gcc *.c -lm and run and see !!!
 There is no document but all codes are small (less than 200 lines).
 So if you want to know how it works, it is not difficult to read the codes.
 
-Contact to me if you write this kind demonstration code.
