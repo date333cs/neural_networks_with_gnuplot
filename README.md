@@ -10,3 +10,24 @@ Compile each code by gcc *.c -lm and run and see !!!
 There is no document but all codes are small (less than 200 lines).
 So if you want to know how it works, it is not difficult to read the codes.
 
+
++ SOM (1 dimension)
+    somanim090501-1d.c
+    kurata-special002.c (input space: 3 dimension)
+
++ SOM (2 dimension)
+    sample090501gp5.c [animation]
+    somanim090501-2d.c
+
++ Associative Memory
+    asmemory090501.c
+    data: kanji1.h,
+
++ A learning of single unit
+    lab070420a.c
+    lab090423p.c
+    data: apples.dat, oranges.dat
+
++ Backpropagation
+    lab060518b.c
+    data: apples3.dat, oranges3.dat
