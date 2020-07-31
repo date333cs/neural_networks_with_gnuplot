@@ -4,7 +4,7 @@
    Simple Neuron
 
    2007.4.19 A.Date
-   Last modified at 14 Apr 2016
+   Last modified at 31 Jul 2020
 
   %  gcc lab070420a.c -lm
  
@@ -18,15 +18,12 @@
 #define MAX_SAMPLES 1000
 #define N_DIM 3
 
-
-/* 以下のパラメータ値を変えて学習の様子がどう変化するか観測してみる */
-
-#define RAND_SEED  123456789  /* 乱数の種 */
-#define SLEEP 50000   /* 表示スピード */
-int n_trials = 100;   /* 学習回数 */
-double eta = 0.1;     /* 学習係数 */
-double lambda=1.0;   /* シグモイド関数のパラメータ */
-char data_file1[] = "apples.dat";   /* 入力データ．課題C,Dではファイル名を変える */
+#define RAND_SEED  123456789
+#define SLEEP 50000
+int n_trials = 100;
+double eta = 0.1; 
+double lambda=1.0;
+char data_file1[] = "apples.dat";
 char data_file2[] = "oranges.dat";
 
 int n_data, n_data1, n_data2;
@@ -111,9 +108,7 @@ int main (int argc, char *argv[] )
   fclose(fp); 
   
   
-  /* gnuplot へのコマンド． あまり気にしなくてよい．*/
-  gp = popen("gnuplot -geometry 640x480","w");
-  fprintf(gp, "set term x11\n");
+  gp = popen("gnuplot","w");
   fprintf(gp, "set xlabel \"x1\"\n");
   fprintf(gp, "set ylabel \"x2\"\n");
   fprintf(gp, "set xrange[%.2lf:%.2lf]\n",x_start,x_end);
@@ -122,8 +117,6 @@ int main (int argc, char *argv[] )
   //      fprintf(gp, "set terminal postscript\n");
   
   
-  
-  /* 結合係数の初期値として乱数を代入 */
 	for (i=0; i<N_DIM; i++) {
 	  w[i] = drand48() -0.5;
 	}

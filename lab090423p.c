@@ -4,7 +4,7 @@
    Simple Neuron
    
    2009.4.23 A.Date
-   Last modified at 14 Apr 2016
+   Last modified at 31 Jul 2020
    
    %  gcc lab090423p.c -lm
    
@@ -77,8 +77,7 @@ int main (int argc, char *argv[] )
   n_data = n_data1 + n_data2;
   
   /* command for gnuplot : do not mind too much */
-  gp = popen("gnuplot -geometry 640x480","w");
-  fprintf(gp, "set term x11\n");
+  gp = popen("gnuplot","w");
   fprintf(gp, "set xlabel \"x1\"\n");
   fprintf(gp, "set ylabel \"x2\"\n");
   fprintf(gp, "set xrange[%.2lf:%.2lf]\n",x_start,x_end);

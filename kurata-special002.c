@@ -2,7 +2,7 @@
   Self-Organizing Map:  A demo using C language and gnuplot !!!
   
   2005. 4.15 by A.Date
-  Last modified 14 Apr 2016
+  Last modified 31 Jul 2020
 */
 
 #include <stdlib.h>
@@ -17,7 +17,7 @@
 #define Z_RANGE 1.0
 
 // #define SLEEP 1000
-#define SLEEP 10
+#define SLEEP 100
 
 double X_RANGE = 0.01;
 double Y_RANGE = 0.01;
@@ -68,8 +68,7 @@ int main (int argc, char *argv[] )
   
   srand48(seed);
   
-  gp = popen("gnuplot -geometry 640x480","w");
-  fprintf(gp, "set term x11\n");
+  gp = popen("gnuplot","w");
   fprintf(gp, "set parametric\n");
   fprintf(gp, "set style data linespoints\n");
   fprintf(gp, "set xlabel \"x\"\n");

@@ -1,7 +1,7 @@
 /*
    Associative Memory 
    2006.5.26  A.Date
-   Last modified 14 Apr 2016
+   Last modified 31 Jul 2020
 */
 
 #include <stdlib.h>  /*  drand48() */
@@ -69,21 +69,20 @@ int main (int argc, char *argv[] )
   srand48(seed);
   init_connection();
   
-  gp1 = popen("gnuplot -geometry 480x480","w");
+  gp1 = popen("gnuplot","w");
   
   /*
-    gp1 = popen("gnuplot","w");
     fprintf(gp1, "set terminal postscript eps color \"Times\" 20\n");
   */
-  fprintf(gp1, "set term x11\n");
+
   fprintf(gp1, "set pm3d\n");
   fprintf(gp1, "set view 0,0\n");
   //	fprintf(gp1, "set view 15,30\n"); 
   //	fprintf(gp1, "set view 5,5\n"); 
   fprintf(gp1, "unset key\n");
   
-  gp2 = popen("gnuplot -geometry 480x360","w");
-  fprintf(gp2, "set term x11\n");
+  gp2 = popen("gnuplot","w");
+  // fprintf(gp2, "set term x11\n");
   fprintf(gp2, "set style data lines\n");
   fprintf(gp2, "set xlabel \"time\"\n");
   fprintf(gp2, "set ylabel \"inner product\"\n");

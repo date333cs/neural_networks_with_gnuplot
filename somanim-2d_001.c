@@ -2,7 +2,7 @@
   Self-Organizing Map (2D):  A demo using C language and gnuplot !!!
   
   2005. 6.26 by A.Date
-  Last modified 14 Apr 2016
+  Last modified 31 Jul 2020
   Animation Demo
 */
 
@@ -67,11 +67,9 @@ int main (int argc, char *argv[] )
   
   srand48(seed);
   
-  gp = popen("gnuplot -geometry 640x480","w");
-  fprintf(gp, "set term x11\n");
+  gp = popen("gnuplot","w");
   fprintf(gp, "set parametric\n");
   fprintf(gp, "set style data linespoints\n");
-  //  fprintf(gp, "set data style linespoints\n"); // too old
   fprintf(gp, "set xlabel \"x\"\n");
   fprintf(gp, "set ylabel \"y\"\n");
   fprintf(gp, "set zlabel \"z\"\n");

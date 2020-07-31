@@ -1,7 +1,7 @@
 /*
   Self-Organizing Map (2D):
   2006.5.14  A.Date
-  Last modified at 14 Apr 2016
+  Last modified at 31 Jul 2020
   
   % gcc som-2d_001.c -lm 
   
@@ -59,11 +59,9 @@ int main (int argc, char *argv[] )
   
   srand48(seed);
   
-  gp = popen("gnuplot -geometry 640x480","w");
-  fprintf(gp, "set term x11\n");
+  gp = popen("gnuplot","w");
   fprintf(gp, "set parametric\n");
   fprintf(gp, "set style data linespoints\n");
-  //   fprintf(gp, "set data style linespoints\n");
   fprintf(gp, "set xlabel \"x_1\"\n");
   fprintf(gp, "set ylabel \"x_2\"\n");
   fprintf(gp, "set xrange[0:1]\n");
