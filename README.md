@@ -14,7 +14,8 @@ So it is not difficult to know how it works.
 #### Policy
 -- Small
 -- One file
--- Works more than 50 years
+-- Works more than 50 years.
+C language 1972-- and Gnuplot 1986-- are really great!!!
 
 #### SOM (1 dimension)
 
