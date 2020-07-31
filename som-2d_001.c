@@ -97,7 +97,7 @@ init_reference(){
   for (i=0; i < N_XUNITS; i++){
     for (j=0; j < N_YUNITS; j++){
       for (k=0; k<DIM_INPUT; k++){
-	RV[i][j][k] = drand48();
+        RV[i][j][k] = drand48();
       }
     }       
   }       
@@ -134,13 +134,13 @@ som2d()
     for (j=0; j<N_YUNITS; j++){
       sum = 0.0;
       for (k=0; k<DIM_INPUT; k++){
-	tmp = RV[i][j][k] - S[k];
-	sum += tmp*tmp;
+        tmp = RV[i][j][k] - S[k];
+	      sum += tmp*tmp;
       }
       if ( sum < min ){
-	min = sum;
-	argmin.x = i; 
-	argmin.y = j; 
+	      min = sum;
+	      argmin.x = i; 
+	      argmin.y = j; 
       } 
     } 
   }
@@ -153,7 +153,7 @@ som2d()
       hci = ALPHA*exp(-(double)dist/denom);
       
       for (k=0; k<DIM_INPUT; k++){ 
-	RV[i][j][k] =  RV[i][j][k] + hci* (S[k] -RV[i][j][k]);
+        RV[i][j][k] =  RV[i][j][k] + hci* (S[k] -RV[i][j][k]);
       } 
     }
   } 

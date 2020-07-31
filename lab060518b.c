@@ -135,16 +135,14 @@ main (int argc, char *argv[])
   n_data2 = n_data - n_data1;
   fclose(fp);
   
-  gp = popen("gnuplot -geometry 640x480+0+0","w");
-  fprintf(gp, "set term x11\n");
+  gp = popen("gnuplot","w");
   fprintf(gp, "set xlabel \"x1\"\n");
   fprintf(gp, "set ylabel \"x2\"\n");
   fprintf(gp, "set xrange[%.2lf:%.2lf]\n",x_start,x_end);
   fprintf(gp, "set yrange[%.2lf:%.2lf]\n",y_start,y_end);
   fprintf(gp, "set size square\n");
   
-  gp2 = popen("gnuplot -geometry 640x480-0+0","w");
-  fprintf(gp2, "set term x11\n");
+  gp2 = popen("gnuplot","w");
   fprintf(gp2, "set parametric\n");
   fprintf(gp2, "set xlabel 'x1'\n");
   fprintf(gp2, "set ylabel 'x2'\n");
